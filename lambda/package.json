@@ -1,16 +1,44 @@
 {
-  "name": "@amzn/hello-world",
-  "version": "1.2.0",
-  "description": "alexa utility for quickly building skills",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "agent-lambda",
+  "version": "0.0.0",
+  "description": "",
+  "license": "UNLICENSED",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
   },
-  "author": "Amazon Alexa",
-  "license": "Apache License",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "npm run build -- --stub",
+    "dev": "vitest dev",
+    "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs . && prettier -c src test",
+    "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs . --fix && prettier -c src test -w",
+    "test": "npm run lint && vitest run --coverage"
+  },
   "dependencies": {
-    "ask-sdk-core": "^2.7.0",
-    "ask-sdk-model": "^1.19.0",
-    "aws-sdk": "^2.326.0"
+    "ask-sdk-core": "^2.12.1",
+    "ask-sdk-model": "^1.59.0",
+    "aws-sdk": "^2.1340.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.29.7",
+    "ask-sdk-local-debug": "^1.1.0",
+    "eslint": "^8.36.0",
+    "eslint-config-unjs": "^0.1.0",
+    "prettier": "^2.8.5",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.2",
+    "vitest": "^0.29.7"
   }
 }
