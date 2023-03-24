@@ -16,25 +16,325 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
-          "slots": [],
-          "samples": [
-            "hello",
-            "how are you",
-            "say hi world",
-            "say hi",
-            "hi",
-            "say hello world",
-            "say hello"
-          ]
-        },
-        {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
+        },
+        {
+          "name": "GetInfo",
+          "slots": [
+            {
+              "name": "team",
+              "type": "Team",
+              "samples": [
+                "{team}"
+              ]
+            },
+            {
+              "name": "info",
+              "type": "InfoType",
+              "multipleValues": {
+                "enabled": true
+              }
+            }
+          ],
+          "samples": [
+            "{info} {team}",
+            "I am looking for information about the soccer team called {team}",
+            "I need to know {info} for {team}",
+            "{team} {info}"
+          ]
         }
       ],
-      "types": []
-    }
+      "types": [
+        {
+          "values": [
+            {
+              "id": "39",
+              "name": {
+                "value": "Wolverhampton Wanderers",
+                "synonyms": [
+                  "Wolverhampton",
+                  "Wolves"
+                ]
+              }
+            },
+            {
+              "id": "48",
+              "name": {
+                "value": "West Ham United",
+                "synonyms": [
+                  "West Ham"
+                ]
+              }
+            },
+            {
+              "id": "47",
+              "name": {
+                "value": "Tottenham Hotspur",
+                "synonyms": [
+                  "Tottenham"
+                ]
+              }
+            },
+            {
+              "id": "41",
+              "name": {
+                "value": "Southampton"
+              }
+            },
+            {
+              "id": "65",
+              "name": {
+                "value": "Nottingham Forest",
+                "synonyms": [
+                  "Nottingham"
+                ]
+              }
+            },
+            {
+              "id": "34",
+              "name": {
+                "value": "Newcastle United",
+                "synonyms": [
+                  "Newcastle"
+                ]
+              }
+            },
+            {
+              "id": "33",
+              "name": {
+                "value": "Manchester United"
+              }
+            },
+            {
+              "id": "50",
+              "name": {
+                "value": "Manchester City"
+              }
+            },
+            {
+              "id": "40",
+              "name": {
+                "value": "Liverpool"
+              }
+            },
+            {
+              "id": "46",
+              "name": {
+                "value": "Leicester City",
+                "synonyms": [
+                  "Leicester"
+                ]
+              }
+            },
+            {
+              "id": "63",
+              "name": {
+                "value": "Leeds United",
+                "synonyms": [
+                  "Leeds"
+                ]
+              }
+            },
+            {
+              "id": "36",
+              "name": {
+                "value": "Fulham"
+              }
+            },
+            {
+              "id": "45",
+              "name": {
+                "value": "Everton"
+              }
+            },
+            {
+              "id": "52",
+              "name": {
+                "value": "Crystal Palace"
+              }
+            },
+            {
+              "id": "49",
+              "name": {
+                "value": "Chelsea"
+              }
+            },
+            {
+              "id": "51",
+              "name": {
+                "value": "Brighton & Hove Albion",
+                "synonyms": [
+                  "Brighton"
+                ]
+              }
+            },
+            {
+              "id": "55",
+              "name": {
+                "value": "Brentford"
+              }
+            },
+            {
+              "id": "66",
+              "name": {
+                "value": "Aston Villa"
+              }
+            },
+            {
+              "id": "42",
+              "name": {
+                "value": "Arsenal"
+              }
+            },
+            {
+              "id": "35",
+              "name": {
+                "value": "Bournemouth"
+              }
+            }
+          ],
+          "name": "Team"
+        },
+        {
+          "values": [
+            {
+              "id": "winLossRecord",
+              "name": {
+                "value": "Win Loss Record",
+                "synonyms": [
+                  "current record",
+                  "the record",
+                  "record"
+                ]
+              }
+            },
+            {
+              "id": "playingNow",
+              "name": {
+                "value": "Playing Now",
+                "synonyms": [
+                  "playing right now"
+                ]
+              }
+            },
+            {
+              "id": "numGamesPlayed",
+              "name": {
+                "value": "Number of Games Played",
+                "synonyms": [
+                  "how many games",
+                  "played so far",
+                  "how many games played so far"
+                ]
+              }
+            },
+            {
+              "id": "nextOpponent",
+              "name": {
+                "value": "Next Opponent",
+                "synonyms": [
+                  "play next",
+                  "playing next",
+                  "play against next"
+                ]
+              }
+            },
+            {
+              "id": "nextGameDate",
+              "name": {
+                "value": "Next Game Date"
+              }
+            },
+            {
+              "id": "manager",
+              "name": {
+                "value": "Manager",
+                "synonyms": [
+                  "current manager",
+                  "the manager",
+                  "their manager"
+                ]
+              }
+            },
+            {
+              "id": "leaguePosition",
+              "name": {
+                "value": "League Position",
+                "synonyms": [
+                  "position",
+                  "is doing",
+                  "place",
+                  "what place"
+                ]
+              }
+            },
+            {
+              "id": "lastScore",
+              "name": {
+                "value": "Last Score",
+                "synonyms": [
+                  "previous game",
+                  "their last game",
+                  "the score of last game"
+                ]
+              }
+            },
+            {
+              "id": "lastOpponent",
+              "name": {
+                "value": "Last Opponent",
+                "synonyms": [
+                  "who play last",
+                  "did play against",
+                  "who did play"
+                ]
+              }
+            }
+          ],
+          "name": "InfoType"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "GetInfo",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "team",
+              "type": "Team",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1511866133470.1153711515589"
+              }
+            },
+            {
+              "name": "info",
+              "type": "InfoType",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1511866133470.1153711515589",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What team?"
+          }
+        ]
+      }
+    ]
   },
-  "version": "2"
+  "version": "5"
 }

@@ -1,5 +1,5 @@
 import LaunchRequestHandler from "./launch";
-import HelloWorldIntentHandler from "./hello-world";
+import GetInfoIntentHandler from "./get-info";
 import HelpIntentHandler from "./help";
 import CancelAndStopIntentHandler from "./cancel";
 import FallbackIntentHandler from "./fallback";
@@ -10,7 +10,7 @@ import ErrorHandler from "./error";
 
 export const requestHandlers = [
   LaunchRequestHandler,
-  HelloWorldIntentHandler,
+  GetInfoIntentHandler,
   HelpIntentHandler,
   CancelAndStopIntentHandler,
   FallbackIntentHandler,
