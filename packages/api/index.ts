@@ -1,12 +1,13 @@
-import { ofetch } from "ofetch";
+import { ofetch, type FetchOptions } from "ofetch";
+import type { EndpointMap } from "./types";
 
 const DEFAULT_URL = "https://v3.football.api-sports.io/";
-// type Options = CreateFetchOptions["defaults"] & {
-//   baseURL?:
-//     | "https://api-football-v1.p.rapidapi.com/v3/" // rapidapi
-//     | "https://v3.football.api-sports.io/"; // api-sports
-// };
+export const apiFetch = ofetch.create({ baseURL: DEFAULT_URL });
 
-const apiFetch = ofetch.create({ baseURL: DEFAULT_URL });
-
-export default apiFetch;
+export default function interact<
+  E extends keyof EndpointMap,
+  R extends EndpointMap[E],
+  P extends R["parameters"]
+>(endpoint: E, params: P, options: FetchOptions<"json"> = {}) {
+  return apiFetch<R>(endpoint, { ...options, params });
+}

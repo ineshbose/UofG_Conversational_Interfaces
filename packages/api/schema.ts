@@ -1,18 +1,10 @@
+/**
+ * Would be great to implement zod schemas for the responses..
+ * but I don't have enough time to get to it yet.
+ */
 import { z } from "zod";
 
-// type OptionalParamSchema = {
-//   <R extends z.ZodTypeAny>(response: R): ReturnType<
-//     typeof getBaseSchema<R, { team: ReturnType<typeof z.string> }>
-//   >;
-//   <R extends z.ZodTypeAny, P extends Record<string, z.ZodTypeAny>>(
-//     response: R,
-//     params: P
-//   ): ReturnType<
-//     typeof getBaseSchema<R, P & { team: ReturnType<typeof z.string> }>
-//   >;
-// };
-
-export const getBaseSchema = <
+const getBaseSchema = <
   R extends z.ZodTypeAny,
   P extends Record<string, z.ZodTypeAny>
 >(
