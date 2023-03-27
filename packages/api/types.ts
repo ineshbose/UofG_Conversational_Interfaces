@@ -1,36 +1,38 @@
+type SafeNumber = number | string;
+
 export type Team = {
-  id: number;
+  id: SafeNumber;
   name: string;
   code?: string;
   country?: string;
-  founded?: number;
+  founded?: SafeNumber;
   national?: boolean;
   logo?: string;
 };
 
 export type Venue = {
-  id: number;
+  id: SafeNumber;
   name: string;
   address: string;
   city: string;
-  capacity: number;
+  capacity: SafeNumber;
   surface: string;
   image: string;
 };
 
 export type League = {
-  id: number;
+  id: SafeNumber;
   name: string;
   country: string;
   logo: string;
   flag: string;
-  season: number;
+  season: SafeNumber;
 };
 
 export type Score<T extends boolean = true> = {
-  home: number;
-  away: number;
-  total: T extends true ? number : number | undefined;
+  home: SafeNumber;
+  away: SafeNumber;
+  total: T extends true ? SafeNumber : SafeNumber | undefined;
 };
 
 export type ScoreFixtures = Record<
@@ -50,7 +52,7 @@ export type Goal = {
 export type Card = "yellow" | "red";
 
 export type MinuteMetric = {
-  total: number;
+  total: SafeNumber;
   percentage: string;
 };
 
@@ -67,17 +69,17 @@ export type Minutes =
 export type MinuteMetrics = Record<Minutes, MinuteMetric>;
 
 export type Streak = {
-  wins: number;
-  draws: number;
-  loses: number;
+  wins: SafeNumber;
+  draws: SafeNumber;
+  loses: SafeNumber;
 };
 
-export type Lineup = { formation: string; played: number };
+export type Lineup = { formation: string; played: SafeNumber };
 
 export type Penalty = {
   scored: MinuteMetric;
   missed: MinuteMetric;
-  total: number;
+  total: SafeNumber;
 };
 
 export type Biggest = {
@@ -88,11 +90,11 @@ export type Biggest = {
 };
 
 export type Coach = {
-  id: number;
+  id: SafeNumber;
   name: string;
   firstname: string;
   lastname: string;
-  age: number;
+  age: SafeNumber;
   birth: {
     date: string;
     place: string;
@@ -111,18 +113,18 @@ export type Coach = {
 };
 
 export type StandingMetric = {
-  played: number;
-  win: number;
-  draw: number;
-  lose: number;
-  goals: Record<AltSide, number>;
+  played: SafeNumber;
+  win: SafeNumber;
+  draw: SafeNumber;
+  lose: SafeNumber;
+  goals: Record<AltSide, SafeNumber>;
 };
 
 export type Standing = {
-  rank: number;
+  rank: SafeNumber;
   team: Team;
-  points: number;
-  goalsDiff: number;
+  points: SafeNumber;
+  goalsDiff: SafeNumber;
   group: string;
   form: string;
   status: string;
@@ -131,14 +133,14 @@ export type Standing = {
 } & Record<"all" | Side, StandingMetric>;
 
 export type Fixture = {
-  id: number;
+  id: SafeNumber;
   referee: any;
   timezone: string;
   date: string;
-  timestamp: number;
-  periods: { first: number; second: any };
-  venue: { id: number; name: string; city: string };
-  status: { long: string; short: string; elapsed: number };
+  timestamp: SafeNumber;
+  periods: { first: SafeNumber; second: any };
+  venue: { id: SafeNumber; name: string; city: string };
+  status: { long: string; short: string; elapsed: SafeNumber };
 };
 
 export type FixtureTimes = "halftime" | "fulltime" | "extratime" | "penality";
@@ -147,21 +149,21 @@ export type ApiResponse<P extends Record<string, any> | undefined, R> = {
   get: string;
   parameters: P;
   errors: Array<any>;
-  results: number;
-  paging: { current: number; total: number };
+  results: SafeNumber;
+  paging: { current: SafeNumber; total: SafeNumber };
   response: R;
 };
 
 export type EndpointMap = {
   "/teams": ApiResponse<
     | Partial<{
-        id: number;
+        id: SafeNumber;
         name: string;
-        league: number;
+        league: SafeNumber;
         season: string;
         country: string;
         code: string;
-        venue: number;
+        venue: SafeNumber;
         search: string;
       }>
     | undefined,
@@ -170,9 +172,9 @@ export type EndpointMap = {
 
   "/teams/statistics": ApiResponse<
     {
-      league: number;
+      league: SafeNumber;
       season: string;
-      team: number;
+      team: SafeNumber;
       date?: string;
     },
     {
@@ -189,31 +191,31 @@ export type EndpointMap = {
       cards: Record<Card, MinuteMetrics>;
     }
   >;
-  "/teams/seasons": ApiResponse<{ team: number }, Array<number>>;
+  "/teams/seasons": ApiResponse<{ team: SafeNumber }, Array<SafeNumber>>;
   "/coachs": ApiResponse<
-    Partial<{ id: number; team: number; search: string }> | undefined,
+    Partial<{ id: SafeNumber; team: SafeNumber; search: string }> | undefined,
     Array<Coach>
   >;
   "/standings": ApiResponse<
-    { league?: number; season: string; team?: number },
-    Array<League & { standings: Standing[][] }>
+    { league?: SafeNumber; season: string; team?: SafeNumber },
+    Array<{ league: League & { standings: Standing[][] } }>
   >;
   "/fixtures": ApiResponse<
     | Partial<{
-        id?: number;
+        id?: SafeNumber;
         ids?: string;
         live?: string;
         date?: string;
-        league?: number;
+        league?: SafeNumber;
         season?: string;
-        team?: number;
-        last?: number;
-        next?: number;
+        team?: SafeNumber;
+        last?: SafeNumber;
+        next?: SafeNumber;
         from?: string;
         to?: string;
         round?: string;
         status?: string;
-        venue?: number;
+        venue?: SafeNumber;
         timezone?: string;
       }>
     | undefined,
@@ -226,3 +228,15 @@ export type EndpointMap = {
     }>
   >;
 };
+
+export type InfoType =
+  | "lastOpponent"
+  | "lastScore"
+  | "leaguePosition"
+  | "manager"
+  | "nextGameDate"
+  | "nextOpponent"
+  | "numGamesPlayed"
+  | "playingNow"
+  | "winLossRecord"
+  | "default_teamInfo";

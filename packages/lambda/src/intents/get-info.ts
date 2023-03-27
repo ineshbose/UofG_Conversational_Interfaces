@@ -1,4 +1,5 @@
 import { getRequestType, getIntentName } from "ask-sdk-core";
+import { getInfo, type InfoType } from "agent-api";
 import { defineRequestHandler, getResolvedSlot } from "../utils";
 
 /**
@@ -11,12 +12,16 @@ export default defineRequestHandler({
       getIntentName(requestEnvelope) === "GetInfo"
     );
   },
-  handle({ requestEnvelope, responseBuilder }) {
+  async handle({ requestEnvelope, responseBuilder }) {
     // const locale = getLocale(requestEnvelope)
-    const team = getResolvedSlot(requestEnvelope, 'team').pop()
-    const info = getResolvedSlot(requestEnvelope, 'info').map((i) => i.id)
+    const team = getResolvedSlot(requestEnvelope, "team").pop();
+    const info = getResolvedSlot(requestEnvelope, "info").map(
+      (i) => i.id
+    ) as InfoType[];
 
-    const speakOutput = `${team?.name || '[40x for Team Slot]'} - [Intents ${info}]`;
+    const speakOutput = team
+      ? ((await getInfo({ team, info }, "")) as string)
+      : "What team?";
 
     return responseBuilder
       .speak(speakOutput)
