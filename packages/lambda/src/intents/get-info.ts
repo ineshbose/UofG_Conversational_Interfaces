@@ -1,20 +1,24 @@
 import { getRequestType, getIntentName } from "ask-sdk-core";
 import { defineRequestHandler, getResolvedSlot } from "../utils";
 
+/**
+ * This is the main intent for football-agent.
+ */
 export default defineRequestHandler({
-  canHandle(handlerInput) {
+  canHandle({ requestEnvelope }) {
     return (
-      getRequestType(handlerInput.requestEnvelope) === "IntentRequest" &&
-      getIntentName(handlerInput.requestEnvelope) === "GetInfo"
+      getRequestType(requestEnvelope) === "IntentRequest" &&
+      getIntentName(requestEnvelope) === "GetInfo"
     );
   },
-  handle(handlerInput) {
-    const team = getResolvedSlot(handlerInput.requestEnvelope, 'team').pop()
-    const info = getResolvedSlot(handlerInput.requestEnvelope, 'info').map((i) => i.id)
+  handle({ requestEnvelope, responseBuilder }) {
+    // const locale = getLocale(requestEnvelope)
+    const team = getResolvedSlot(requestEnvelope, 'team').pop()
+    const info = getResolvedSlot(requestEnvelope, 'info').map((i) => i.id)
 
     const speakOutput = `${team?.name || '[40x for Team Slot]'} - [Intents ${info}]`;
 
-    return handlerInput.responseBuilder
+    return responseBuilder
       .speak(speakOutput)
       .reprompt(speakOutput)
       .getResponse();
