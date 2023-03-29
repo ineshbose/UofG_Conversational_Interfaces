@@ -1,3 +1,3 @@
 export * from './fetch';
-export * from './intent';
+export { default as getInfo } from './intent';
 export * from './types';

@@ -1,6 +1,7 @@
 import { getRequestType, getIntentName } from "ask-sdk-core";
 import { getInfo, type InfoType } from "agent-api";
 import { defineRequestHandler, getResolvedSlot } from "../utils";
+import { API_FOOTBALL_KEY } from "../../../../env";
 
 /**
  * This is the main intent for football-agent.
@@ -20,7 +21,7 @@ export default defineRequestHandler({
     ) as InfoType[];
 
     const speakOutput = team
-      ? ((await getInfo({ team, info }, "")) as string)
+      ? ((await getInfo({ team, info }, API_FOOTBALL_KEY)) as string)
       : "What team?";
 
     return responseBuilder
