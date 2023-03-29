@@ -24,10 +24,7 @@
           "slots": [
             {
               "name": "team",
-              "type": "Team",
-              "samples": [
-                "{team}"
-              ]
+              "type": "Team"
             },
             {
               "name": "info",
@@ -38,9 +35,80 @@
             }
           ],
           "samples": [
+            "what is {info} {team}",
+            "How many {info} have they played so far",
+            "{info} {team} playing now",
+            "{info} {team} {info}",
+            "{info} {team} playing right now",
+            "Who is the {info} for {team}",
+            "Who is their {info}",
+            "Now I'm wondering who is the current {info} for {team}",
+            "Who will they {info}",
+            "Who are they {info}",
+            "Who will {team} {info}",
+            "What was the {info} of {team} game",
+            "How did {team} do in their {info}",
+            "How did {team} {info}",
+            "What was {team} {info} in their last game",
+            "Who did their {info}",
+            "What was their {info}",
+            "Who did they {info}",
+            "What was they {info}",
+            "Who did {team} {info}",
+            "What was {team} {info}",
+            "Now I am wondering in their last game {info} {team} play",
+            "Now I'm wondering {info} {team}",
+            "Could you tell me what {team} {info} is",
+            "Could you tell me what {team} current {info} is",
+            "What is {team} {info} right now",
+            "I am looking for {info} about the soccer team called {team}",
+            "I am wondering what {info} {team} has right now",
+            "I am wondering {info} for {team}",
+            "I need to know the {info} of {team}",
+            "Can you provide me the details of their {info}",
+            "Can you provide me the details of {team} {info}",
+            "What is the {info} of them",
+            "What is the {info} of {team}",
+            "What is the {info} of {team} this season",
+            "Tell me about the {info} of them",
+            "Tell me about the {info} of {team}",
+            "How many {info} has them",
+            "What is the {info} for them",
+            "How many {info} has {team}",
+            "What is the {info} for {team}",
+            "Can you give me details about their {info}",
+            "Can you give me details about {team} {info}",
+            "What is the {info} of them in the current season",
+            "What is the {info} of {team} in the current season",
+            "What is the {info} of {team} in the Premier League",
+            "When will their {info} be updated",
+            "When will {team} {info} be updated",
+            "Who is the {info} of {team}",
+            "What is the current {info} for them",
+            "What is the current {info} for {team}",
+            "Give me an update on their {info}",
+            "Give me an update on {team} {info}",
+            "When is their {info} happening",
+            "When is {team} {info} happening",
+            "What was their {info} in the last game",
+            "What was {team} {info} in the last game",
+            "Who is their {info}",
+            "Who is {team} {info}",
+            "What's the {info} for them",
+            "What's the {info} for {team}",
+            "Tell me about their {info}",
+            "Tell me about {team} {info}",
+            "I need information about their {info}",
+            "I need information about {team} {info}",
+            "What is their {info}",
+            "What is {team} {info}",
+            "Can you tell me their {info}",
+            "Can you tell me {team} {info}",
+            "they {info} please",
+            "{team} {info} please",
+            "{info} they",
+            "they {info}",
             "{info} {team}",
-            "I am looking for information about the soccer team called {team}",
-            "I need to know {info} for {team}",
             "{team} {info}"
           ]
         }
@@ -203,6 +271,11 @@
               "name": {
                 "value": "Win Loss Record",
                 "synonyms": [
+                  "lost",
+                  "won",
+                  "information",
+                  "matches won",
+                  "matches lost",
                   "current record",
                   "the record",
                   "record"
@@ -214,6 +287,8 @@
               "name": {
                 "value": "Playing Now",
                 "synonyms": [
+                  "right now",
+                  "playing now",
                   "playing right now"
                 ]
               }
@@ -223,6 +298,9 @@
               "name": {
                 "value": "Number of Games Played",
                 "synonyms": [
+                  "many",
+                  "many matches",
+                  "number of matches",
                   "how many games",
                   "played so far",
                   "how many games played so far"
@@ -234,6 +312,8 @@
               "name": {
                 "value": "Next Opponent",
                 "synonyms": [
+                  "playing next",
+                  "playing after",
                   "play next",
                   "playing next",
                   "play against next"
@@ -251,6 +331,11 @@
               "name": {
                 "value": "Manager",
                 "synonyms": [
+                  "manages",
+                  "managing",
+                  "managed by",
+                  "manage",
+                  "manager",
                   "current manager",
                   "the manager",
                   "their manager"
@@ -262,6 +347,10 @@
               "name": {
                 "value": "League Position",
                 "synonyms": [
+                  "doing",
+                  "doing this season",
+                  "standing",
+                  "rank",
                   "position",
                   "is doing",
                   "place",
@@ -295,46 +384,7 @@
           "name": "InfoType"
         }
       ]
-    },
-    "dialog": {
-      "intents": [
-        {
-          "name": "GetInfo",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "team",
-              "type": "Team",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1511866133470.1153711515589"
-              }
-            },
-            {
-              "name": "info",
-              "type": "InfoType",
-              "elicitationRequired": false,
-              "confirmationRequired": false,
-              "prompts": {}
-            }
-          ]
-        }
-      ],
-      "delegationStrategy": "ALWAYS"
-    },
-    "prompts": [
-      {
-        "id": "Elicit.Slot.1511866133470.1153711515589",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "What team?"
-          }
-        ]
-      }
-    ]
+    }
   },
-  "version": "5"
+  "version": "11"
 }

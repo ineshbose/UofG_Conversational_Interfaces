@@ -26,10 +26,5 @@
     "ofetch": "^1.0.1",
     "zod": "^3.21.4"
   },
-  "devDependencies": {},
-  "build": {
-    "entries": [
-      "./index"
-    ]
-  }
+  "devDependencies": {}
 }

@@ -13,12 +13,23 @@ export default defineRequestHandler({
       getIntentName(requestEnvelope) === "GetInfo"
     );
   },
-  async handle({ requestEnvelope, responseBuilder }) {
+  async handle({ requestEnvelope, responseBuilder, attributesManager }) {
     // const locale = getLocale(requestEnvelope)
-    const team = getResolvedSlot(requestEnvelope, "team").pop();
+    const sessionAttributes = attributesManager.getSessionAttributes<{
+      current_team: ReturnType<typeof getResolvedSlot>[number] | undefined;
+    }>();
+
+    console.log(sessionAttributes);
+
+    const team =
+      getResolvedSlot(requestEnvelope, "team").pop() ||
+      sessionAttributes.current_team;
+
     const info = getResolvedSlot(requestEnvelope, "info").map(
       (i) => i.id
     ) as InfoType[];
+
+    sessionAttributes.current_team = team;
 
     const speakOutput = team
       ? ((await getInfo({ team, info }, API_FOOTBALL_KEY)) as string)

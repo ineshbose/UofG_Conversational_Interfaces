@@ -23,6 +23,7 @@
     "stub": "npm run build -- --stub"
   },
   "dependencies": {
+    "agent-api": "*",
     "ask-sdk-core": "^2.12.1",
     "ask-sdk-model": "^1.59.0",
     "aws-sdk": "^2.1340.0"
