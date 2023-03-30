@@ -1,0 +1,204 @@
+---
+import InputText from "../components/InputText.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Football Agent">
+  <main>
+    <h1>Football <span class="text-gradient">Agent</span></h1>
+    <div id="inputs">
+      <InputText id="wit-ai-token" text="Enter your token for Wit.ai" />
+      <InputText
+        id="api-football-token"
+        text="Enter your token for API-Football"
+      />
+    </div>
+    <div id="chatbox">
+      <div id="chat"></div>
+      <span id="loading-text" style="display: none;">Loading..</span>
+
+      <form class="input-area">
+        <InputText id="input-message" text="Send message.." maxlength={279} />
+        <button type="submit" aria-label="Send">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path fill="currentColor" d="M3 20v-6l8-2l-8-2V4l19 8l-19 8Z"
+            ></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  import { getInfo, type InfoType, type Team } from "agent-api";
+  import type { WitResponse } from "../../types";
+
+  const form = document.querySelector<HTMLInputElement>("form.input-area")!;
+  const chatarea = document.querySelector("div#chat");
+  const loadingEl = document.querySelector<HTMLElement>("span#loading-text")!;
+
+  function addBubble(txt: string, className = "user-message") {
+    const bubble = document.createElement("div");
+    bubble.className = className;
+    bubble.appendChild(document.createTextNode(txt));
+    chatarea!.appendChild(bubble);
+  }
+
+  function getResolvedEntity(entities: WitResponse['entities'], name: string) {
+    return (entities[name] || []); // .map((i) => i.value);
+  }
+
+  form.onsubmit = () => {
+    const inputMessageEl = document.querySelector<HTMLInputElement>(
+      "input#input-message"
+    )!;
+    const witToken =
+      document.querySelector<HTMLInputElement>("input#wit-ai-token")?.value;
+    const footballToken = document.querySelector<HTMLInputElement>(
+      "input#api-football-token"
+    )?.value!;
+    loadingEl.style.display = "block";
+
+    fetch(
+      `https://api.wit.ai/message?v=20230215&q=${encodeURIComponent(inputMessageEl.value)}`,
+      { headers: { Authorization: `Bearer ${witToken}`}}
+    ).then((r) => r.json()).then(({ entities }: WitResponse) => {
+      const currentTeam = window.localStorage.getItem("current_team");
+      const teamName = getResolvedEntity(entities, "Team:Team").pop()?.body; // .value
+
+      const team = teamName ? { name: teamName } : currentTeam ? JSON.parse(currentTeam) : undefined as Team | undefined;
+      const info = getResolvedEntity(entities, "InfoType:InfoType").map((i) => i.value) as InfoType[];
+
+      window.localStorage.setItem("current_team", JSON.stringify(team));
+
+      (team ? getInfo({ team, info }, footballToken) : Promise.resolve("What team?")).then(
+        (r) => {
+          addBubble(inputMessageEl.value);
+          inputMessageEl.value = "";
+          addBubble(r, "bot-message");
+        }
+      ).then(() => {
+        loadingEl.style.display = "none";
+      })
+    })
+    return false;
+  };
+</script>
+
+<style is:global>
+  .user-message {
+    margin-left: auto;
+    background-color: #cbd5e1;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+  }
+
+  html.dark .user-message {
+    background-color: #334155;
+  }
+
+  .bot-message {
+    color: black;
+    background-color: rgba(var(--accent));
+    margin-right: auto;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+  }
+</style>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 1rem 0;
+  }
+  #inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  #chatbox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    line-height: 1.6;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    color: black;
+    background-color: white;
+    /* padding: 1rem; */
+    border-radius: 0.4rem;
+    transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  html.dark #chatbox {
+    background-color: black;
+    color: white;
+    box-shadow: 0 25px 50px -12px rgb(255 255 255 / 0.25);
+  }
+  #chatbox strong {
+    color: rgb(var(--accent));
+  }
+  #chatbox > #chat {
+    padding: 1rem;
+    overflow-y: scroll;
+    height: 85%;
+    display: flex;
+    flex-direction: column; /* -reverse; */
+    gap: 0.5rem;
+  }
+
+  #chat::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  #chat::-webkit-scrollbar-track {
+    @apply rounded-full bg-clip-padding;
+    background: #f8fafc;
+    border: 4px solid rgba(0, 0, 0, 0);
+  }
+  html.dark #chat::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+  #chat::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-clip-padding;
+    background: #f1f5f9;
+    border: 4px solid rgba(0, 0, 0, 0);
+  }
+  .input-area {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height: 15%;
+    gap: 0.5rem;
+    background-color: #f1f5f9;
+    border-top: 1px solid rgba(var(--accent), 25%);
+    padding: 1rem 0.5rem;
+  }
+
+  html.dark .input-area {
+    background-color: #1e293b;
+  }
+</style>
