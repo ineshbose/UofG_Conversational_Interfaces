@@ -1,0 +1,508 @@
+{
+    "utterances": [
+        {
+            "text": "Can you provide me the details of Manchester City",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 34,
+                    "end": 49,
+                    "body": "Manchester City",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Could you tell me Manchester City's league position",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 18,
+                    "end": 33,
+                    "body": "Manchester City",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 36,
+                    "end": 51,
+                    "body": "league position",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Could you tell me what Manchester City's last score",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 23,
+                    "end": 38,
+                    "body": "Manchester City",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 41,
+                    "end": 51,
+                    "body": "last score",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Could you tell me when is Manchester City's next game",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 26,
+                    "end": 41,
+                    "body": "Manchester City",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 44,
+                    "end": 53,
+                    "body": "next game",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "How did Chelsea do in their previous game",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 8,
+                    "end": 15,
+                    "body": "Chelsea",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 28,
+                    "end": 41,
+                    "body": "previous game",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "How many games have Manchester City played so far this season",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 0,
+                    "end": 14,
+                    "body": "How many games",
+                    "entities": []
+                },
+                {
+                    "entity": "Team:Team",
+                    "start": 20,
+                    "end": 35,
+                    "body": "Manchester City",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 36,
+                    "end": 49,
+                    "body": "played so far",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "I am looking for information about the soccer team called West Ham United",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 17,
+                    "end": 28,
+                    "body": "information",
+                    "entities": []
+                },
+                {
+                    "entity": "Team:Team",
+                    "start": 58,
+                    "end": 73,
+                    "body": "West Ham United",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "I need to know the position of Leeds United in the Premier League table",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 19,
+                    "end": 27,
+                    "body": "position",
+                    "entities": []
+                },
+                {
+                    "entity": "Team:Team",
+                    "start": 31,
+                    "end": 43,
+                    "body": "Leeds United",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Is Liverpool playing now",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 3,
+                    "end": 12,
+                    "body": "Liverpool",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 13,
+                    "end": 24,
+                    "body": "playing now",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Now I'm wondering who is the current manager for Tottenham Hotspur",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 29,
+                    "end": 44,
+                    "body": "current manager",
+                    "entities": []
+                },
+                {
+                    "entity": "Team:Team",
+                    "start": 49,
+                    "end": 66,
+                    "body": "Tottenham Hotspur",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "What is the next game for Chelsea",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 26,
+                    "end": 33,
+                    "body": "Chelsea",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 12,
+                    "end": 21,
+                    "body": "next game",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "What is the points total of Chelsea this season",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 28,
+                    "end": 35,
+                    "body": "Chelsea",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 12,
+                    "end": 24,
+                    "body": "points total",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "What is the win-loss record of Manchester United",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 31,
+                    "end": 48,
+                    "body": "Manchester United",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 11,
+                    "end": 27,
+                    "body": " win-loss record",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "What was Liverpool's score in their last game",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 30,
+                    "end": 45,
+                    "body": "their last game",
+                    "entities": []
+                },
+                {
+                    "entity": "Team:Team",
+                    "start": 9,
+                    "end": 18,
+                    "body": "Liverpool",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "What was Manchester United's win-loss record last season",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 9,
+                    "end": 26,
+                    "body": "Manchester United",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 29,
+                    "end": 44,
+                    "body": "win-loss record",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "What was the final score of Arsenal's last game",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 28,
+                    "end": 35,
+                    "body": "Arsenal",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 13,
+                    "end": 24,
+                    "body": "final score",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Who did Manchester City play last",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 8,
+                    "end": 23,
+                    "body": "Manchester City",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 24,
+                    "end": 33,
+                    "body": "play last",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Who did Tottenham Hotspur play in their last game",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 8,
+                    "end": 25,
+                    "body": "Tottenham Hotspur",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 34,
+                    "end": 49,
+                    "body": "their last game",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Who is the manager for Arsenal",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 7,
+                    "end": 18,
+                    "body": "the manager",
+                    "entities": []
+                },
+                {
+                    "entity": "Team:Team",
+                    "start": 23,
+                    "end": 30,
+                    "body": "Arsenal",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Who was their last opponent",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 14,
+                    "end": 27,
+                    "body": "last opponent",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Who will Manchester United play next",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 9,
+                    "end": 26,
+                    "body": "Manchester United",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 27,
+                    "end": 36,
+                    "body": "play next",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "Wolverhampton next opponent",
+            "entities": [
+                {
+                    "entity": "Team:Team",
+                    "start": 0,
+                    "end": 13,
+                    "body": "Wolverhampton",
+                    "entities": []
+                },
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 14,
+                    "end": 27,
+                    "body": "next opponent",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "last opponent Chelsea",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 0,
+                    "end": 13,
+                    "body": "last opponent",
+                    "entities": []
+                },
+                {
+                    "entity": "Team:Team",
+                    "start": 14,
+                    "end": 21,
+                    "body": "Chelsea",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "last score their",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 0,
+                    "end": 10,
+                    "body": "last score",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        },
+        {
+            "text": "their manager",
+            "entities": [
+                {
+                    "entity": "InfoType:InfoType",
+                    "start": 6,
+                    "end": 13,
+                    "body": "manager",
+                    "entities": []
+                }
+            ],
+            "traits": [],
+            "intent": "GetInfo"
+        }
+    ]
+}

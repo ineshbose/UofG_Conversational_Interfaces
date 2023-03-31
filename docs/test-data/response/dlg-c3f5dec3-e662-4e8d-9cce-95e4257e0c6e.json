@@ -1,0 +1,141 @@
+[
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {}
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:31:43Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Chelsea",
+                        "id": "49"
+                    },
+                    "info": [
+                        "leaguePosition"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Chelsea",
+                    "id": "49"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:32:01Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Chelsea",
+                        "id": "49"
+                    },
+                    "info": [
+                        "numGamesPlayed"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Chelsea",
+                    "id": "49"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:32:38Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Chelsea",
+                        "id": "49"
+                    },
+                    "info": [
+                        "nextOpponent",
+                        "playingNow"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Chelsea",
+                    "id": "49"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:32:54Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Chelsea",
+                        "id": "49"
+                    },
+                    "info": []
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Chelsea",
+                    "id": "49"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:33:13Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Chelsea",
+                        "id": "49"
+                    },
+                    "info": [
+                        "manager"
+                    ]
+                }
+            }
+        }
+    }
+]

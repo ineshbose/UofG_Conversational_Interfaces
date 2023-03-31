@@ -6,7 +6,7 @@ USER: Hi. Today, I need your help getting information about Aston Villa in EPL. 
 
 ASSISTANT: Aston Villa's record is currently in 16th place in the Premier League.
 
-USER: Okay. Now I'm wondering, Aston Villa in their last game, what was the score?
+USER: Okay. Now I'm wondering, Aston Villaï¿½in their last game, what was the score?
 - Intent: GetInfo
 - Slots: {team: 'Aston Villa', info: 'lastScore'}
 
@@ -24,7 +24,7 @@ USER: Okay. Now I'm also wondering, who is the manager of Aston Villa?
 
 ASSISTANT: Aston Villa's manager is Unai Emery.
 
-USER: Awesome. Well, that's pretty much all the information I was looking for on Stoke City F.C. and you gave me some good answers. So, thank you for that.
+USER: Awesome. Well, that's pretty much all the information I was looking for on Stoke City F.C.ï¿½and you gave me some good answers. So, thank you for that.
 - Intent: Other
 
 ASSISTANT: Thanks. I hope you have a great day take care.

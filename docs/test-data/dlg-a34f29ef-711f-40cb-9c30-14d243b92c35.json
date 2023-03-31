@@ -1,0 +1,68 @@
+[
+    {
+        "user": "Can you tell me if Leicester City is playing right now?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Leicester City",
+            "info": [
+                "playingNow"
+            ]
+        },
+        "assistant": [
+            "Leicester City is not playing right now. They will play next on December 13th against Manchester City FC."
+        ]
+    },
+    {
+        "user": "What's their record like?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Leicester City",
+            "info": [
+                "winLossRecord"
+            ]
+        },
+        "assistant": [
+            "Leicester City is in the 19th Place with three wins, 10 losses and three draws."
+        ]
+    },
+    {
+        "user": "And, who did they play last?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Leicester City",
+            "info": [
+                "lastOpponent"
+            ]
+        },
+        "assistant": [
+            "Their last game played was on December 9th against West Brom and Leicester City won the game with the score 1 to 0."
+        ]
+    },
+    {
+        "user": "Okay, and who is their manager?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Leicester City",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Leicester City A.F.C.'s manager is brendan rodgers."
+        ]
+    },
+    {
+        "user": "Okay. Thank you.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": [
+            "You're welcome and goodbye."
+        ]
+    },
+    {
+        "user": "Goodbye.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": []
+    }
+]

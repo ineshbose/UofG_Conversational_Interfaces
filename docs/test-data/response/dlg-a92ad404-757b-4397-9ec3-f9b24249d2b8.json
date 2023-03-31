@@ -1,0 +1,113 @@
+[
+  {},
+  {
+    "version": "1.0",
+    "session": {
+      "attributes": {}
+    },
+    "context": {},
+    "request": {
+      "type": "IntentRequest",
+      "locale": "en-GB",
+      "timestamp": "2023-03-30T19:58:35Z",
+      "intent": {
+        "name": "GetInfo",
+        "slots": {
+          "team": {
+            "name": "Manchester United",
+            "id": "33"
+          },
+          "info": [
+            "playingNow"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "version": "1.0",
+    "session": {
+      "attributes": {
+        "current_team": {
+          "name": "Manchester United",
+          "id": "33"
+        }
+      }
+    },
+    "context": {},
+    "request": {
+      "type": "IntentRequest",
+      "locale": "en-GB",
+      "timestamp": "2023-03-30T19:58:54Z",
+      "intent": {
+        "name": "GetInfo",
+        "slots": {
+          "team": {
+            "name": "Manchester United",
+            "id": "33"
+          },
+          "info": [
+            "nextOpponent",
+            "playingNow"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "version": "1.0",
+    "session": {
+      "attributes": {
+        "current_team": {
+          "name": "Manchester United",
+          "id": "33"
+        }
+      }
+    },
+    "context": {},
+    "request": {
+      "type": "IntentRequest",
+      "locale": "en-GB",
+      "timestamp": "2023-03-30T19:59:14Z",
+      "intent": {
+        "name": "GetInfo",
+        "slots": {
+          "team": {
+            "name": "Manchester United",
+            "id": "33"
+          },
+          "info": []
+        }
+      }
+    }
+  },
+  {
+    "version": "1.0",
+    "session": {
+      "attributes": {
+        "current_team": {
+          "name": "Manchester United",
+          "id": "33"
+        }
+      }
+    },
+    "context": {},
+    "request": {
+      "type": "IntentRequest",
+      "locale": "en-GB",
+      "timestamp": "2023-03-30T19:59:32Z",
+      "intent": {
+        "name": "GetInfo",
+        "slots": {
+          "team": {
+            "name": "Manchester United",
+            "id": "33"
+          },
+          "info": [
+            "manager"
+          ]
+        }
+      }
+    }
+  }
+]

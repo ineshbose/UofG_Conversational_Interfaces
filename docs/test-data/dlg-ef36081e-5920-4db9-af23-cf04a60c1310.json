@@ -1,0 +1,73 @@
+[
+    {
+        "user": "What place is Brighton in?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Brighton",
+            "info": [
+                "leaguePosition"
+            ]
+        },
+        "assistant": [
+            "Currently in 10th place English Premier League."
+        ]
+    },
+    {
+        "user": "How many games has Brighton played so far?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Brighton",
+            "info": [
+                "numGamesPlayed"
+            ]
+        },
+        "assistant": [
+            "They had played a total of 14 games."
+        ]
+    },
+    {
+        "user": "Who did Brighton play next?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Brighton",
+            "info": [
+                "nextOpponent"
+            ]
+        },
+        "assistant": [
+            "Their next game is against Crystal Palace FC."
+        ]
+    },
+    {
+        "user": "How did Brighton do in their last game?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Brighton",
+            "info": [
+                "lastScore"
+            ]
+        },
+        "assistant": [
+            "The last game was a draw the score was 2 and 2."
+        ]
+    },
+    {
+        "user": "Who is the manager for Brighton?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Brighton",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Their manager is Chris Hughton."
+        ]
+    },
+    {
+        "user": "Okay.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": []
+    }
+]

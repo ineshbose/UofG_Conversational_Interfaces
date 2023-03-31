@@ -1,0 +1,26 @@
+name: Deploy App
+
+on:
+  push:
+    paths:
+      - "packages/app/*"
+
+jobs:
+  deploy-app:
+    name: Deploy app
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: yarn install && yarn workspace agent-api build
+      - run: |
+          sed -i 's/export default defineConfig({/export default defineConfig({ base: "UofG_Conversational_Interfaces",/' packages/app/astro.config.mjs
+
+      - run: yarn workspace agent-app build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./packages/app/dist

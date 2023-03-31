@@ -1,0 +1,119 @@
+{
+    "name": "InfoType",
+    "roles": [
+        "InfoType"
+    ],
+    "lookups": [
+        "keywords"
+    ],
+    "keywords": [
+        {
+            "keyword": "lastOpponent",
+            "synonyms": [
+                "did play against",
+                "did play last",
+                "last opponent",
+                "lastopponent",
+                "play last",
+                "who did play",
+                "who play last"
+            ]
+        },
+        {
+            "keyword": "lastScore",
+            "synonyms": [
+                "final score",
+                "last score",
+                "lastscore",
+                "previous game",
+                "the score of last game",
+                "their last game"
+            ]
+        },
+        {
+            "keyword": "leaguePosition",
+            "synonyms": [
+                "doing",
+                "doing this season",
+                "is doing",
+                "league position",
+                "leagueposition",
+                "place",
+                "points total",
+                "position",
+                "rank",
+                "standing",
+                "what place"
+            ]
+        },
+        {
+            "keyword": "manager",
+            "synonyms": [
+                "current manager",
+                "manage",
+                "managed by",
+                "manager",
+                "manages",
+                "managing",
+                "the manager",
+                "their manager"
+            ]
+        },
+        {
+            "keyword": "nextGameDate",
+            "synonyms": [
+                "next game",
+                "nextgamedate"
+            ]
+        },
+        {
+            "keyword": "nextOpponent",
+            "synonyms": [
+                "next opponent",
+                "nextOpponent",
+                "play against next",
+                "play next",
+                "playing after",
+                "playing next"
+            ]
+        },
+        {
+            "keyword": "numGamesPlayed",
+            "synonyms": [
+                "how many games",
+                "how many games played so far",
+                "many",
+                "many matches",
+                "numGamesPlayed",
+                "number of games played",
+                "number of matches",
+                "played so far"
+            ]
+        },
+        {
+            "keyword": "playingNow",
+            "synonyms": [
+                "playing now",
+                "playing right now",
+                "playingNow",
+                "right now"
+            ]
+        },
+        {
+            "keyword": "winLossRecord",
+            "synonyms": [
+                "current record",
+                "information",
+                "lost",
+                "matches lost",
+                "matches won",
+                "record",
+                "the record",
+                "win loss record",
+                "win-loss record",
+                "winlossrecord",
+                "won"
+            ]
+        }
+    ]
+}

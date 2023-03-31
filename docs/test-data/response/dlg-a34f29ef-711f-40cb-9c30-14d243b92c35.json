@@ -1,0 +1,140 @@
+[
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {}
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:52:21Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Leicester City",
+                        "id": "46"
+                    },
+                    "info": [
+                        "playingNow"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Leicester City",
+                    "id": "46"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:56:01Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Leicester City",
+                        "id": "46"
+                    },
+                    "info": [
+                        "winLossRecord"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Leicester City",
+                    "id": "46"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:56:38Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Leicester City",
+                        "id": "46"
+                    },
+                    "info": [
+                        "lastOpponent"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Leicester City",
+                    "id": "46"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:56:57Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Leicester City",
+                        "id": "46"
+                    },
+                    "info": [
+                        "manager"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Leicester City",
+                    "id": "46"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:57:14Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Leicester City",
+                        "id": "46"
+                    },
+                    "info": []
+                }
+            }
+        }
+    }
+]

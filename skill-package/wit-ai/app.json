@@ -1,0 +1,7 @@
+{
+    "version": 20200513,
+    "zip-command": "zip football_agent.zip football_agent\/app.json football_agent\/entities\/*.json football_agent\/intents\/*.json football_agent\/traits\/*.json football_agent\/utterances\/*.json football_agent\/composer\/*.json",
+    "name": "football_agent",
+    "lang": "en",
+    "timezone": "Europe\/London"
+}

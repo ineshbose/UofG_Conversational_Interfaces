@@ -1,0 +1,163 @@
+[
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {}
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:47:07Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Newcastle United",
+                        "id": "34"
+                    },
+                    "info": []
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Newcastle United",
+                    "id": "34"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:47:28Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Newcastle United",
+                        "id": "34"
+                    },
+                    "info": [
+                        "numGamesPlayed"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Newcastle United",
+                    "id": "34"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:47:47Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Newcastle United",
+                        "id": "34"
+                    },
+                    "info": []
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Newcastle United",
+                    "id": "34"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:48:15Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Newcastle United",
+                        "id": "34"
+                    },
+                    "info": []
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Newcastle United",
+                    "id": "34"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:48:40Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Newcastle United",
+                        "id": "34"
+                    },
+                    "info": [
+                        "manager"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Newcastle United",
+                    "id": "34"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:48:57Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Newcastle United",
+                        "id": "34"
+                    },
+                    "info": []
+                }
+            }
+        }
+    }
+]

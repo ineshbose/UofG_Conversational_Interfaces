@@ -32,7 +32,7 @@ USER: Who is the manager of the team?
 - Intent: GetInfo
 - Slots: {team: 'Manchester United', info: 'manager'}
 
-ASSISTANT: Their manager is José Mourinho.
+ASSISTANT: Their manager is Josï¿½ Mourinho.
 
 USER: Great, thank you so much for the help today.
 - Intent: Other

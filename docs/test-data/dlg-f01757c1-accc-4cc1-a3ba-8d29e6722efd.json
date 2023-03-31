@@ -1,0 +1,75 @@
+[
+    {
+        "user": "Hey, Can you tell me what place Nottingham Forest is in? They're in the English Premier League.",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Nottingham Forest",
+            "info": [
+                "leaguePosition"
+            ]
+        },
+        "assistant": [
+            "Nottingham Forest is currently in 19th Place in the English Premier League."
+        ]
+    },
+    {
+        "user": "Okay, Are they playing right now?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Nottingham Forest",
+            "info": [
+                "playingNow"
+            ]
+        },
+        "assistant": [
+            "They're currently not playing."
+        ]
+    },
+    {
+        "user": "Okay, Who did they played last?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Nottingham Forest",
+            "info": [
+                "lastOpponent"
+            ]
+        },
+        "assistant": [
+            "Their last game was against Everton and they lost by 2 - 1."
+        ]
+    },
+    {
+        "user": "They lost to Everton?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Nottingham Forest",
+            "info": [
+                "lastScore"
+            ]
+        },
+        "assistant": [
+            "Yes, They lost to Everton by 2 - 1."
+        ]
+    },
+    {
+        "user": "Okay and who is their manager?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Nottingham Forest",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Their manager is Steve Cooper."
+        ]
+    },
+    {
+        "user": "Oh, Okay. Thank you so much for your help today.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": [
+            "Okay, Bye."
+        ]
+    }
+]

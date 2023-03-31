@@ -1,0 +1,12 @@
+name,TP,TN,FP,FN
+GetInfo,4,0,0,1
+Team,4,0,0,1
+lastOpponent,0,0,0,0
+lastScore,0,0,0,1
+leaguePosition,0,0,0,1
+manager,1,0,0,0
+nextGameDate,0,0,0,0
+nextOpponent,1,0,0,0
+numGamesPlayed,0,0,0,0
+playingNow,1,0,1,0
+winLossRecord,0,0,0,0

@@ -1,0 +1,82 @@
+[
+    {
+        "user": "Hello. I need to know how are Everton doing?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "leaguePosition"
+            ]
+        },
+        "assistant": [
+            "Hi.",
+            "Would you like to know about Everton?",
+            "They are currently ranked 13."
+        ]
+    },
+    {
+        "user": "Yes, please.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": []
+    },
+    {
+        "user": "Are they playing right now?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "playingNow"
+            ]
+        },
+        "assistant": [
+            "No, they are not playing today."
+        ]
+    },
+    {
+        "user": "When do they play their next name?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "nextGameDate"
+            ]
+        },
+        "assistant": [
+            "They play with Chelsea tomorrow, January 31st."
+        ]
+    },
+    {
+        "user": "What was the score in their last game?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "lastScore"
+            ]
+        },
+        "assistant": [
+            "They played West Ham and they are tied with score 1-1."
+        ]
+    },
+    {
+        "user": "And, who's their manager?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Let me check that for you.",
+            "Sean Dyche is their manager."
+        ]
+    },
+    {
+        "user": "Okay, great. That's all I needed.",
+        "intent": "Thanks",
+        "slots": {},
+        "assistant": []
+    }
+]

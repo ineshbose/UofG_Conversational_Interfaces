@@ -1,0 +1,163 @@
+[
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {}
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:37:40Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Aston Villa",
+                        "id": "66"
+                    },
+                    "info": []
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Aston Villa",
+                    "id": "66"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:39:42Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Aston Villa",
+                        "id": "66"
+                    },
+                    "info": []
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Aston Villa",
+                    "id": "66"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:40:27Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Aston Villa",
+                        "id": "66"
+                    },
+                    "info": []
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Aston Villa",
+                    "id": "66"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:41:32Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Aston Villa",
+                        "id": "66"
+                    },
+                    "info": [
+                        "manager"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Aston Villa",
+                    "id": "66"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:42:48Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Aston Villa",
+                        "id": "66"
+                    },
+                    "info": [
+                        "winLossRecord"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Aston Villa",
+                    "id": "66"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T19:43:13Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Aston Villa",
+                        "id": "66"
+                    },
+                    "info": []
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "user": "Hi, I am a English Premier League soccer fan and my favorite team is Manchester United. And can you tell me how are they doing?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Manchester United",
+      "info": [
+        "leaguePosition"
+      ]
+    },
+    "assistant": [
+      "They are currently in first place in the English Premier League."
+    ]
+  },
+  {
+    "user": "Great, can you tell me if they are playing right now?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Manchester United",
+      "info": [
+        "playingNow"
+      ]
+    },
+    "assistant": [
+      "No, they're not scheduled to play today."
+    ]
+  },
+  {
+    "user": "Okay, who will they be playing next?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Manchester United",
+      "info": [
+        "nextOpponent"
+      ]
+    },
+    "assistant": [
+      "Their next game is on August 19th with Swansea City FC."
+    ]
+  },
+  {
+    "user": "Great, what was the score of their last game?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Manchester United",
+      "info": [
+        "lastScore"
+      ]
+    },
+    "assistant": [
+      "They won their last game with a score of 4-0."
+    ]
+  },
+  {
+    "user": "Who is the manager of the team?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Manchester United",
+      "info": [
+        "manager"
+      ]
+    },
+    "assistant": [
+      "Their manager is José Mourinho."
+    ]
+  },
+  {
+    "user": "Great, thank you so much for the help today.",
+    "intent": "Other",
+    "slots": {},
+    "assistant": [
+      "You're welcome!"
+    ]
+  }
+]

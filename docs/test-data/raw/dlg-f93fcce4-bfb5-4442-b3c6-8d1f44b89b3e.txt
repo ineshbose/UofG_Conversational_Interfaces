@@ -22,7 +22,7 @@ USER: Who is their manager?
 - Intent: GetInfo
 - Slots: {team: 'Liverpool', info: 'manager'}
 
-ASSISTANT: Their manager is Jürgen Klopp.
+ASSISTANT: Their manager is Jï¿½rgen Klopp.
 
 USER: When is their next game?
 - Intent: GetInfo

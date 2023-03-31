@@ -28,7 +28,7 @@ USER: Good and who is their manager this season?
 - Intent: GetInfo
 - Slots: {team: 'Manchester United', info: 'manager'}
 
-ASSISTANT: Their manager is José Mourinho.
+ASSISTANT: Their manager is Josï¿½ Mourinho.
 
 USER: Alright, thanks for your help.
 - Intent: Other

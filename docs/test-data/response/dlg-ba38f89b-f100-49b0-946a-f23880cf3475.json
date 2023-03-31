@@ -1,0 +1,142 @@
+[
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {}
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20:03:45Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Brighton & Hove Albion",
+                        "id": "51"
+                    },
+                    "info": [
+                        "leaguePosition"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Brighton & Hove Albion",
+                    "id": "51"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20: 27: 25Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Brighton & Hove Albion",
+                        "id": "51"
+                    },
+                    "info": [
+                        "playingNow"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Brighton & Hove Albion",
+                    "id": "51"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20: 27: 42Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Brighton & Hove Albion",
+                        "id": "51"
+                    },
+                    "info": [
+                        "lastOpponent"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Brighton & Hove Albion",
+                    "id": "51"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20: 27: 58Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Brighton & Hove Albion",
+                        "id": "51"
+                    },
+                    "info": [
+                        "lastScore"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "version": "1.0",
+        "session": {
+            "attributes": {
+                "current_team": {
+                    "name": "Brighton & Hove Albion",
+                    "id": "51"
+                }
+            }
+        },
+        "context": {},
+        "request": {
+            "type": "IntentRequest",
+            "locale": "en-GB",
+            "timestamp": "2023-03-30T20: 28: 31Z",
+            "intent": {
+                "name": "GetInfo",
+                "slots": {
+                    "team": {
+                        "name": "Brighton & Hove Albion",
+                        "id": "51"
+                    },
+                    "info": [
+                        "manager"
+                    ]
+                }
+            }
+        }
+    }
+]

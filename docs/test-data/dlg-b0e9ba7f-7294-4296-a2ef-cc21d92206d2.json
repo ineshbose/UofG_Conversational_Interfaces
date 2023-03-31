@@ -1,0 +1,86 @@
+[
+  {
+    "user": "Hi, I want to know some information about Newcastle United.",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Newcastle United"
+    },
+    "assistant": [
+      "Hello.",
+      "How can I help you?",
+      "Sure, what would you like to know?"
+    ]
+  },
+  {
+    "user": "What was the score in their last game and who did they play?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Newcastle United",
+      "info": [
+        "lastOpponent",
+        "lastScore"
+      ]
+    },
+    "assistant": [
+      "They won their last game with the score of 2-1 against Stoke City on September 16th."
+    ]
+  },
+  {
+    "user": "How many games have they played so far?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Newcastle United",
+      "info": [
+        "numGamesPlayed"
+      ]
+    },
+    "assistant": [
+      "They have played 5 matches in total."
+    ]
+  },
+  {
+    "user": "Whom do they play next?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Newcastle United",
+      "info": [
+        "nextOpponent"
+      ]
+    },
+    "assistant": [
+      "They will next play against Brighton on September 24th at 8:00 a.m."
+    ]
+  },
+  {
+    "user": "Who is their manager?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Newcastle United",
+      "info": [
+        "manager"
+      ]
+    },
+    "assistant": [
+      "Their manager's name is Rafael Benitez."
+    ]
+  },
+  {
+    "user": "And what place is Newcastle United in?",
+    "intent": "GetInfo",
+    "slots": {
+      "team": "Newcastle United",
+      "info": [
+        "leaguePosition"
+      ]
+    },
+    "assistant": [
+      "They are currently in fourth place with 3 wins and 2 losses."
+    ]
+  },
+  {
+    "user": "Thank you, that's all I need to know.",
+    "intent": "Other",
+    "slots": {},
+    "assistant": []
+  }
+]

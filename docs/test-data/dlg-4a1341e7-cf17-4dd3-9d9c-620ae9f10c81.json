@@ -1,0 +1,68 @@
+[
+    {
+        "user": "Hi. Today, I need your help getting information about Aston Villa in EPL. I'm wondering, what is their record right now?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Aston Villa",
+            "info": [
+                "winLossRecord"
+            ]
+        },
+        "assistant": [
+            "Aston Villa's record is currently in 16th place in the Premier League."
+        ]
+    },
+    {
+        "user": "Okay. Now I'm wondering, Aston Villa in their last game, what was the score?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Aston Villa",
+            "info": [
+                "lastScore"
+            ]
+        },
+        "assistant": [
+            "It was their first game."
+        ]
+    },
+    {
+        "user": "Okay. When will they play their next game?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Aston Villa",
+            "info": [
+                "nextGameDate"
+            ]
+        },
+        "assistant": [
+            "In the next game, Aston Villa will be playing at 9:30 P.M. on August 19th."
+        ]
+    },
+    {
+        "user": "Okay. Now I'm also wondering, who is the manager of Aston Villa?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Aston Villa",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Aston Villa's manager is Unai Emery."
+        ]
+    },
+    {
+        "user": "Awesome. Well, that's pretty much all the information I was looking for on Stoke City F.C. and you gave me some good answers. So, thank you for that.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": [
+            "Thanks. I hope you have a great day take care."
+        ]
+    },
+    {
+        "user": "I hope you have a great evening, as well. Take care.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": []
+    }
+]

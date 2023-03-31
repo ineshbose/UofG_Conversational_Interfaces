@@ -1,0 +1,73 @@
+[
+    {
+        "user": "Hello, what place are the Manchester United in?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Manchester United",
+            "info": [
+                "leaguePosition"
+            ]
+        },
+        "assistant": [
+            "Currently in first place in the English Premier League."
+        ]
+    },
+    {
+        "user": "Isn't it cool, and how many games have the United played so far?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Manchester United",
+            "info": [
+                "numGamesPlayed"
+            ]
+        },
+        "assistant": [
+            "The Manchester United F.C. has played one game in the English Premier League."
+        ]
+    },
+    {
+        "user": "Alright, and who again do they play against?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Manchester United",
+            "info": [
+                "lastOpponent"
+            ]
+        },
+        "assistant": [
+            "They played against the west ham united F.C."
+        ]
+    },
+    {
+        "user": "10 nil, what was the score?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Manchester United",
+            "info": [
+                "lastScore"
+            ]
+        },
+        "assistant": [
+            "They won their last game. Next score was 4 and 0."
+        ]
+    },
+    {
+        "user": "Good and who is their manager this season?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Manchester United",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Their manager is José Mourinho."
+        ]
+    },
+    {
+        "user": "Alright, thanks for your help.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": []
+    }
+]

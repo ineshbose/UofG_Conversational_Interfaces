@@ -1,0 +1,141 @@
+[
+    {
+        "user": "Hello. I need to know how are Everton doing?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "leaguePosition"
+            ]
+        },
+        "assistant": [
+            "They are currently ranked 13."
+        ]
+    },
+    {
+        "user": "Yes, please.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": [
+            "Would you like to know about Everton?"
+        ]
+    },
+    {
+        "user": "Are they playing right now?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "playingNow"
+            ]
+        },
+        "assistant": [
+            "No, they are not playing today."
+        ]
+    },
+    {
+        "user": "When do they play their next name?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "nextGameDate"
+            ]
+        },
+        "assistant": [
+            "They play with Chelsea tomorrow, January 31st."
+        ]
+    },
+    {
+        "user": "What was the score in their last game?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "lastScore"
+            ]
+        },
+        "assistant": [
+            "They played West Ham and they are tied with score 1-1."
+        ]
+    },
+    {
+        "user": "And, who's their manager?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Everton",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Sean Dyche is their manager."
+        ]
+    },
+    {
+        "user": "Okay, great. That's all I needed.",
+        "intent": "Thanks",
+        "slots": {},
+        "assistant": []
+    },
+    {
+        "user": "Can you tell me what place Fulham is in right now? They're a football league.",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Fulham",
+            "info": [
+                "leaguePosition"
+            ]
+        },
+        "assistant": [
+            "Fulham is currently in 20th Place."
+        ]
+    },
+    {
+        "user": "Okay. How many games they played so far?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Fulham",
+            "info": [
+                "numGamesPlayed"
+            ]
+        },
+        "assistant": [
+            "Safeway 24 matches."
+        ]
+    },
+    {
+        "user": "Okay. Who'd they play last?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Fulham",
+            "info": [
+                "lastOpponent"
+            ]
+        },
+        "assistant": [
+            "They beat Liverpool 3 to 2."
+        ]
+    },
+    {
+        "user": "Okay. Who's their manager right now?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Fulham",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Marco Silva."
+        ]
+    },
+    {
+        "user": "Thank you very much.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": [
+            "Have a good day. Bye."
+        ]
+    }
+]

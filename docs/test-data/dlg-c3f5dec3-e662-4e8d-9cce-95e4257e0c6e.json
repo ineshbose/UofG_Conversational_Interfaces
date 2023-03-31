@@ -1,0 +1,73 @@
+[
+    {
+        "user": "Hello Assistant. I'm a big fan of Chelsea leagues soccer and I'd like to know what place is Chelsea in?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Chelsea",
+            "info": [
+                "leaguePosition"
+            ]
+        },
+        "assistant": [
+            "They are currently in third place in the English Premier League."
+        ]
+    },
+    {
+        "user": "Thank you and how many games have they played so far?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Chelsea",
+            "info": [
+                "numGamesPlayed"
+            ]
+        },
+        "assistant": [
+            "They had played a total of 24 games."
+        ]
+    },
+    {
+        "user": "Thank you. And who are they playing next?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Chelsea",
+            "info": [
+                "nextOpponent"
+            ]
+        },
+        "assistant": [
+            "Their next opponent is Newcastle FC."
+        ]
+    },
+    {
+        "user": "Thank you. And how did they do in their last game?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Chelsea",
+            "info": [
+                "lastScore"
+            ]
+        },
+        "assistant": [
+            "They lost the last game. The score was 2 and 1."
+        ]
+    },
+    {
+        "user": "Thank you and who is their manager?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Chelsea",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Their manager is Antonio Conte."
+        ]
+    },
+    {
+        "user": "Okay, thank you so much for the information today.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": []
+    }
+]

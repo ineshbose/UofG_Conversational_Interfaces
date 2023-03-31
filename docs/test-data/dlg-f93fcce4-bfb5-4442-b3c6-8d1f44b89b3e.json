@@ -1,0 +1,74 @@
+[
+    {
+        "user": "What place does Liverpool is there in the United Kingdom soccer football team?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Liverpool",
+            "info": [
+                "leaguePosition"
+            ]
+        },
+        "assistant": [
+            "Hello, How can I help you?",
+            "Currently in 5th place in the English Premier League."
+        ]
+    },
+    {
+        "user": "Okay, what was their score in their last game?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Liverpool",
+            "info": [
+                "lastScore"
+            ]
+        },
+        "assistant": [
+            "They won their last game and score was 4 to 1."
+        ]
+    },
+    {
+        "user": "How many games back are they from first place?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Liverpool",
+            "info": [
+                "leaguePosition"
+            ]
+        },
+        "assistant": [
+            "They are 5 game back from 1st place."
+        ]
+    },
+    {
+        "user": "Who is their manager?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Liverpool",
+            "info": [
+                "manager"
+            ]
+        },
+        "assistant": [
+            "Their manager is J�rgen Klopp."
+        ]
+    },
+    {
+        "user": "When is their next game?",
+        "intent": "GetInfo",
+        "slots": {
+            "team": "Liverpool",
+            "info": [
+                "nextGameDate"
+            ]
+        },
+        "assistant": [
+            "Their next game is on November 29th against Stoke City FC."
+        ]
+    },
+    {
+        "user": "Okay, that's all I need.",
+        "intent": "Other",
+        "slots": {},
+        "assistant": []
+    }
+]

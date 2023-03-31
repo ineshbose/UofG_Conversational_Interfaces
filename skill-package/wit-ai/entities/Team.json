@@ -1,0 +1,141 @@
+{
+    "name": "Team",
+    "roles": [
+        "Team"
+    ],
+    "lookups": [
+        "free-text",
+        "keywords"
+    ],
+    "keywords": [
+        {
+            "keyword": "Arsenal",
+            "synonyms": [
+                "arsenal"
+            ]
+        },
+        {
+            "keyword": "Aston Villa",
+            "synonyms": [
+                "Aston Villa"
+            ]
+        },
+        {
+            "keyword": "Bournemouth",
+            "synonyms": [
+                "Bournemouth"
+            ]
+        },
+        {
+            "keyword": "Brentford",
+            "synonyms": [
+                "Brentford"
+            ]
+        },
+        {
+            "keyword": "Brighton & Hove Albion",
+            "synonyms": [
+                "Brighton & Hove Albion",
+                "brighton"
+            ]
+        },
+        {
+            "keyword": "Chelsea",
+            "synonyms": [
+                "chelsea"
+            ]
+        },
+        {
+            "keyword": "Crystal Palace",
+            "synonyms": [
+                "Crystal Palace"
+            ]
+        },
+        {
+            "keyword": "Everton",
+            "synonyms": [
+                "Everton"
+            ]
+        },
+        {
+            "keyword": "Fulham",
+            "synonyms": [
+                "Fulham"
+            ]
+        },
+        {
+            "keyword": "Leeds United",
+            "synonyms": [
+                "leeds",
+                "leeds united"
+            ]
+        },
+        {
+            "keyword": "Leicester City",
+            "synonyms": [
+                "Leicester City",
+                "leicester"
+            ]
+        },
+        {
+            "keyword": "Liverpool",
+            "synonyms": [
+                "liverpool"
+            ]
+        },
+        {
+            "keyword": "Manchester City",
+            "synonyms": [
+                "manchester city"
+            ]
+        },
+        {
+            "keyword": "Manchester United",
+            "synonyms": [
+                "manchester united"
+            ]
+        },
+        {
+            "keyword": "Newcastle United",
+            "synonyms": [
+                "Newcastle United",
+                "newcastle"
+            ]
+        },
+        {
+            "keyword": "Nottingham Forest",
+            "synonyms": [
+                "Nottingham Forest",
+                "nottingham"
+            ]
+        },
+        {
+            "keyword": "Southampton",
+            "synonyms": [
+                "Southampton"
+            ]
+        },
+        {
+            "keyword": "Tottenham Hotspur",
+            "synonyms": [
+                "tottenham",
+                "tottenham hotspur"
+            ]
+        },
+        {
+            "keyword": "West Ham United",
+            "synonyms": [
+                "west ham",
+                "west ham united"
+            ]
+        },
+        {
+            "keyword": "Wolverhampton Wanderers",
+            "synonyms": [
+                "Wolverhampton Wanderers",
+                "wolverhampton",
+                "wolves"
+            ]
+        }
+    ]
+}

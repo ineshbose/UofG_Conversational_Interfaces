@@ -1,0 +1,73 @@
+# intent
+
+- Precision: TP / (TP + FP)
+    = 61 / (61 + 0) = 1
+
+- Recall: TP / (TP + FN)
+    = 61 / (61 + 1) = 0.98
+
+- F1: (2 * P * R) / (P + R)
+    = (2 * 1 * 0.98) / (1 + 0.98) = 0.99
+
+
+# slots
+
+## Team
+
+- Precision: 1.0
+- Recall: 0.9839
+- F1: 0.9919
+
+## lastOpponent
+
+- Precision: 1.0
+- Recall: 0.7143
+- F1: 0.8333
+
+## lastScore
+
+- Precision: 1.0
+- Recall: 0.1818
+- F1: 0.3077
+
+## leaguePosition
+
+- Precision: 1.0
+- Recall: 0.75
+- F1: 0.8571
+
+## manager
+
+- Precision: 1.0
+- Recall: 0.8462
+- F1: 0.9167
+
+## nextGameDate
+
+- Precision: 1.0
+- Recall: 0.3333
+- F1: 0.5
+
+## nextOpponent
+
+- Precision: 0.75
+- Recall: 1.0
+- F1: 0.8571
+
+## numGamesPlayed
+
+- Precision: 0.8
+- Recall: 0.6667
+- F1: 0.7273
+
+## playingNow
+
+- Precision: 0.7143
+- Recall: 1.0
+- F1: 0.8333
+
+## winLossRecord
+
+- Precision: 0.5
+- Recall: 0.5
+- F1: 0.5
